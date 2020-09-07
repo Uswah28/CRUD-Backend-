@@ -3,10 +3,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const exerciseSchema = new Schema({
-  username: { type: String, required: true },
-  description: { type: String, required: true },
-  duration: { type: Number, required: true },
+  name: { type: String, required: true },
+  address: { type: String, required: true },
+  religion: { type: String, required: true },
   date: { type: Date, required: true },
+  email: { type: String, required: true },
+  number: { type: String, required: true },
+  nationality: { type: String, required: true },
+  
 }, {
   timestamps: true,
 });
